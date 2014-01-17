@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220FA33A1889C97E005DF10A /* NSString+TaggedAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3091889C97E005DF10A /* NSString+TaggedAttributedString.m */; };
+		220FA33B1889C97E005DF10A /* TASAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA30B1889C97E005DF10A /* TASAttribute.m */; };
+		220FA33C1889C97E005DF10A /* TASBackgroundColorParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA30D1889C97E005DF10A /* TASBackgroundColorParser.m */; };
+		220FA33D1889C97E005DF10A /* TASBackgroundColorTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA30F1889C97E005DF10A /* TASBackgroundColorTag.m */; };
+		220FA33E1889C97E005DF10A /* TASColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3111889C97E005DF10A /* TASColorManager.m */; };
+		220FA33F1889C97E005DF10A /* TASColorTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3131889C97E005DF10A /* TASColorTag.m */; };
+		220FA3401889C97E005DF10A /* TASFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3151889C97E005DF10A /* TASFontManager.m */; };
+		220FA3411889C97E005DF10A /* TASFontParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3171889C97E005DF10A /* TASFontParser.m */; };
+		220FA3421889C97E005DF10A /* TASFontTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3191889C97E005DF10A /* TASFontTag.m */; };
+		220FA3431889C97E005DF10A /* TASForegroundColorParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA31B1889C97E005DF10A /* TASForegroundColorParser.m */; };
+		220FA3441889C97E005DF10A /* TASForegroundColorTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA31D1889C97E005DF10A /* TASForegroundColorTag.m */; };
+		220FA3451889C97E005DF10A /* TASParagraphParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA31F1889C97E005DF10A /* TASParagraphParser.m */; };
+		220FA3461889C97E005DF10A /* TASParagraphTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3211889C97E005DF10A /* TASParagraphTag.m */; };
+		220FA3471889C97E005DF10A /* TASParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3231889C97E005DF10A /* TASParser.m */; };
+		220FA3481889C97E005DF10A /* TASParseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3251889C97E005DF10A /* TASParseResult.m */; };
+		220FA3491889C97E005DF10A /* TASParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3271889C97E005DF10A /* TASParserManager.m */; };
+		220FA34A1889C97E005DF10A /* TASParserManagerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3291889C97E005DF10A /* TASParserManagerConstants.m */; };
+		220FA34B1889C97E005DF10A /* TASStrikethroughColorParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA32B1889C97E005DF10A /* TASStrikethroughColorParser.m */; };
+		220FA34C1889C97E005DF10A /* TASStrikethroughColorTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA32D1889C97E005DF10A /* TASStrikethroughColorTag.m */; };
+		220FA34D1889C97E005DF10A /* TASStrikethroughParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA32F1889C97E005DF10A /* TASStrikethroughParser.m */; };
+		220FA34E1889C97E005DF10A /* TASStrikethroughTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3311889C97E005DF10A /* TASStrikethroughTag.m */; };
+		220FA34F1889C97E005DF10A /* TASStringToAttributedStringParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3331889C97E005DF10A /* TASStringToAttributedStringParser.m */; };
+		220FA3501889C97E005DF10A /* TASTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3351889C97E005DF10A /* TASTag.m */; };
+		220FA3511889C97E005DF10A /* TASUnderlineParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3371889C97E005DF10A /* TASUnderlineParser.m */; };
+		220FA3521889C97E005DF10A /* TASUnderlineTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FA3391889C97E005DF10A /* TASUnderlineTag.m */; };
+		225B741E180EFEBD00D99A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225B741D180EFEBD00D99A97 /* Foundation.framework */; };
+		225B7420180EFEBD00D99A97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225B741F180EFEBD00D99A97 /* CoreGraphics.framework */; };
+		225B7422180EFEBD00D99A97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225B7421180EFEBD00D99A97 /* UIKit.framework */; };
+		225B7428180EFEBD00D99A97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 225B7426180EFEBD00D99A97 /* InfoPlist.strings */; };
+		225B742A180EFEBD00D99A97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 225B7429180EFEBD00D99A97 /* main.m */; };
+		225B742E180EFEBD00D99A97 /* TASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 225B742D180EFEBD00D99A97 /* TASAppDelegate.m */; };
+		225B7431180EFEBD00D99A97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225B742F180EFEBD00D99A97 /* Main.storyboard */; };
+		225B7434180EFEBD00D99A97 /* TASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225B7433180EFEBD00D99A97 /* TASViewController.m */; };
+		225B7436180EFEBD00D99A97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225B7435180EFEBD00D99A97 /* Images.xcassets */; };
+		225B743D180EFEBD00D99A97 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225B743C180EFEBD00D99A97 /* XCTest.framework */; };
+		225B743E180EFEBD00D99A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225B741D180EFEBD00D99A97 /* Foundation.framework */; };
+		225B743F180EFEBD00D99A97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225B7421180EFEBD00D99A97 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		225B7440180EFEBD00D99A97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 225B7412180EFEBD00D99A97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 225B7419180EFEBD00D99A97;
+			remoteInfo = "Tagged Attributed String";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		220FA3081889C97E005DF10A /* NSString+TaggedAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TaggedAttributedString.h"; sourceTree = "<group>"; };
+		220FA3091889C97E005DF10A /* NSString+TaggedAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TaggedAttributedString.m"; sourceTree = "<group>"; };
+		220FA30A1889C97E005DF10A /* TASAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASAttribute.h; sourceTree = "<group>"; };
+		220FA30B1889C97E005DF10A /* TASAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASAttribute.m; sourceTree = "<group>"; };
+		220FA30C1889C97E005DF10A /* TASBackgroundColorParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASBackgroundColorParser.h; sourceTree = "<group>"; };
+		220FA30D1889C97E005DF10A /* TASBackgroundColorParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASBackgroundColorParser.m; sourceTree = "<group>"; };
+		220FA30E1889C97E005DF10A /* TASBackgroundColorTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASBackgroundColorTag.h; sourceTree = "<group>"; };
+		220FA30F1889C97E005DF10A /* TASBackgroundColorTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASBackgroundColorTag.m; sourceTree = "<group>"; };
+		220FA3101889C97E005DF10A /* TASColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASColorManager.h; sourceTree = "<group>"; };
+		220FA3111889C97E005DF10A /* TASColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASColorManager.m; sourceTree = "<group>"; };
+		220FA3121889C97E005DF10A /* TASColorTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASColorTag.h; sourceTree = "<group>"; };
+		220FA3131889C97E005DF10A /* TASColorTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASColorTag.m; sourceTree = "<group>"; };
+		220FA3141889C97E005DF10A /* TASFontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASFontManager.h; sourceTree = "<group>"; };
+		220FA3151889C97E005DF10A /* TASFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASFontManager.m; sourceTree = "<group>"; };
+		220FA3161889C97E005DF10A /* TASFontParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASFontParser.h; sourceTree = "<group>"; };
+		220FA3171889C97E005DF10A /* TASFontParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASFontParser.m; sourceTree = "<group>"; };
+		220FA3181889C97E005DF10A /* TASFontTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASFontTag.h; sourceTree = "<group>"; };
+		220FA3191889C97E005DF10A /* TASFontTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASFontTag.m; sourceTree = "<group>"; };
+		220FA31A1889C97E005DF10A /* TASForegroundColorParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASForegroundColorParser.h; sourceTree = "<group>"; };
+		220FA31B1889C97E005DF10A /* TASForegroundColorParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASForegroundColorParser.m; sourceTree = "<group>"; };
+		220FA31C1889C97E005DF10A /* TASForegroundColorTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASForegroundColorTag.h; sourceTree = "<group>"; };
+		220FA31D1889C97E005DF10A /* TASForegroundColorTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASForegroundColorTag.m; sourceTree = "<group>"; };
+		220FA31E1889C97E005DF10A /* TASParagraphParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASParagraphParser.h; sourceTree = "<group>"; };
+		220FA31F1889C97E005DF10A /* TASParagraphParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASParagraphParser.m; sourceTree = "<group>"; };
+		220FA3201889C97E005DF10A /* TASParagraphTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASParagraphTag.h; sourceTree = "<group>"; };
+		220FA3211889C97E005DF10A /* TASParagraphTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASParagraphTag.m; sourceTree = "<group>"; };
+		220FA3221889C97E005DF10A /* TASParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASParser.h; sourceTree = "<group>"; };
+		220FA3231889C97E005DF10A /* TASParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASParser.m; sourceTree = "<group>"; };
+		220FA3241889C97E005DF10A /* TASParseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASParseResult.h; sourceTree = "<group>"; };
+		220FA3251889C97E005DF10A /* TASParseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASParseResult.m; sourceTree = "<group>"; };
+		220FA3261889C97E005DF10A /* TASParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASParserManager.h; sourceTree = "<group>"; };
+		220FA3271889C97E005DF10A /* TASParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASParserManager.m; sourceTree = "<group>"; };
+		220FA3281889C97E005DF10A /* TASParserManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASParserManagerConstants.h; sourceTree = "<group>"; };
+		220FA3291889C97E005DF10A /* TASParserManagerConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASParserManagerConstants.m; sourceTree = "<group>"; };
+		220FA32A1889C97E005DF10A /* TASStrikethroughColorParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASStrikethroughColorParser.h; sourceTree = "<group>"; };
+		220FA32B1889C97E005DF10A /* TASStrikethroughColorParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASStrikethroughColorParser.m; sourceTree = "<group>"; };
+		220FA32C1889C97E005DF10A /* TASStrikethroughColorTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASStrikethroughColorTag.h; sourceTree = "<group>"; };
+		220FA32D1889C97E005DF10A /* TASStrikethroughColorTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASStrikethroughColorTag.m; sourceTree = "<group>"; };
+		220FA32E1889C97E005DF10A /* TASStrikethroughParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASStrikethroughParser.h; sourceTree = "<group>"; };
+		220FA32F1889C97E005DF10A /* TASStrikethroughParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASStrikethroughParser.m; sourceTree = "<group>"; };
+		220FA3301889C97E005DF10A /* TASStrikethroughTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASStrikethroughTag.h; sourceTree = "<group>"; };
+		220FA3311889C97E005DF10A /* TASStrikethroughTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASStrikethroughTag.m; sourceTree = "<group>"; };
+		220FA3321889C97E005DF10A /* TASStringToAttributedStringParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASStringToAttributedStringParser.h; sourceTree = "<group>"; };
+		220FA3331889C97E005DF10A /* TASStringToAttributedStringParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASStringToAttributedStringParser.m; sourceTree = "<group>"; };
+		220FA3341889C97E005DF10A /* TASTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASTag.h; sourceTree = "<group>"; };
+		220FA3351889C97E005DF10A /* TASTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASTag.m; sourceTree = "<group>"; };
+		220FA3361889C97E005DF10A /* TASUnderlineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASUnderlineParser.h; sourceTree = "<group>"; };
+		220FA3371889C97E005DF10A /* TASUnderlineParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASUnderlineParser.m; sourceTree = "<group>"; };
+		220FA3381889C97E005DF10A /* TASUnderlineTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TASUnderlineTag.h; sourceTree = "<group>"; };
+		220FA3391889C97E005DF10A /* TASUnderlineTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TASUnderlineTag.m; sourceTree = "<group>"; };
+		225B741A180EFEBD00D99A97 /* Tagged Attributed String.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tagged Attributed String.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		225B741D180EFEBD00D99A97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		225B741F180EFEBD00D99A97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		225B7421180EFEBD00D99A97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		225B7425180EFEBD00D99A97 /* Tagged Attributed String-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tagged Attributed String-Info.plist"; sourceTree = "<group>"; };
+		225B7427180EFEBD00D99A97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		225B7429180EFEBD00D99A97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		225B742B180EFEBD00D99A97 /* Tagged Attributed String-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tagged Attributed String-Prefix.pch"; sourceTree = "<group>"; };
+		225B742C180EFEBD00D99A97 /* TASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TASAppDelegate.h; sourceTree = "<group>"; };
+		225B742D180EFEBD00D99A97 /* TASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TASAppDelegate.m; sourceTree = "<group>"; };
+		225B7430180EFEBD00D99A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		225B7432180EFEBD00D99A97 /* TASViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TASViewController.h; sourceTree = "<group>"; };
+		225B7433180EFEBD00D99A97 /* TASViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TASViewController.m; sourceTree = "<group>"; };
+		225B7435180EFEBD00D99A97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		225B743B180EFEBD00D99A97 /* Tagged Attributed StringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tagged Attributed StringTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		225B743C180EFEBD00D99A97 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		225B7417180EFEBD00D99A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225B7420180EFEBD00D99A97 /* CoreGraphics.framework in Frameworks */,
+				225B7422180EFEBD00D99A97 /* UIKit.framework in Frameworks */,
+				225B741E180EFEBD00D99A97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225B7438180EFEBD00D99A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225B743D180EFEBD00D99A97 /* XCTest.framework in Frameworks */,
+				225B743F180EFEBD00D99A97 /* UIKit.framework in Frameworks */,
+				225B743E180EFEBD00D99A97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220FA3071889C97E005DF10A /* TASTaggedAttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				220FA3081889C97E005DF10A /* NSString+TaggedAttributedString.h */,
+				220FA3091889C97E005DF10A /* NSString+TaggedAttributedString.m */,
+				220FA30A1889C97E005DF10A /* TASAttribute.h */,
+				220FA30B1889C97E005DF10A /* TASAttribute.m */,
+				220FA30C1889C97E005DF10A /* TASBackgroundColorParser.h */,
+				220FA30D1889C97E005DF10A /* TASBackgroundColorParser.m */,
+				220FA30E1889C97E005DF10A /* TASBackgroundColorTag.h */,
+				220FA30F1889C97E005DF10A /* TASBackgroundColorTag.m */,
+				220FA3101889C97E005DF10A /* TASColorManager.h */,
+				220FA3111889C97E005DF10A /* TASColorManager.m */,
+				220FA3121889C97E005DF10A /* TASColorTag.h */,
+				220FA3131889C97E005DF10A /* TASColorTag.m */,
+				220FA3141889C97E005DF10A /* TASFontManager.h */,
+				220FA3151889C97E005DF10A /* TASFontManager.m */,
+				220FA3161889C97E005DF10A /* TASFontParser.h */,
+				220FA3171889C97E005DF10A /* TASFontParser.m */,
+				220FA3181889C97E005DF10A /* TASFontTag.h */,
+				220FA3191889C97E005DF10A /* TASFontTag.m */,
+				220FA31A1889C97E005DF10A /* TASForegroundColorParser.h */,
+				220FA31B1889C97E005DF10A /* TASForegroundColorParser.m */,
+				220FA31C1889C97E005DF10A /* TASForegroundColorTag.h */,
+				220FA31D1889C97E005DF10A /* TASForegroundColorTag.m */,
+				220FA31E1889C97E005DF10A /* TASParagraphParser.h */,
+				220FA31F1889C97E005DF10A /* TASParagraphParser.m */,
+				220FA3201889C97E005DF10A /* TASParagraphTag.h */,
+				220FA3211889C97E005DF10A /* TASParagraphTag.m */,
+				220FA3221889C97E005DF10A /* TASParser.h */,
+				220FA3231889C97E005DF10A /* TASParser.m */,
+				220FA3241889C97E005DF10A /* TASParseResult.h */,
+				220FA3251889C97E005DF10A /* TASParseResult.m */,
+				220FA3261889C97E005DF10A /* TASParserManager.h */,
+				220FA3271889C97E005DF10A /* TASParserManager.m */,
+				220FA3281889C97E005DF10A /* TASParserManagerConstants.h */,
+				220FA3291889C97E005DF10A /* TASParserManagerConstants.m */,
+				220FA32A1889C97E005DF10A /* TASStrikethroughColorParser.h */,
+				220FA32B1889C97E005DF10A /* TASStrikethroughColorParser.m */,
+				220FA32C1889C97E005DF10A /* TASStrikethroughColorTag.h */,
+				220FA32D1889C97E005DF10A /* TASStrikethroughColorTag.m */,
+				220FA32E1889C97E005DF10A /* TASStrikethroughParser.h */,
+				220FA32F1889C97E005DF10A /* TASStrikethroughParser.m */,
+				220FA3301889C97E005DF10A /* TASStrikethroughTag.h */,
+				220FA3311889C97E005DF10A /* TASStrikethroughTag.m */,
+				220FA3321889C97E005DF10A /* TASStringToAttributedStringParser.h */,
+				220FA3331889C97E005DF10A /* TASStringToAttributedStringParser.m */,
+				220FA3341889C97E005DF10A /* TASTag.h */,
+				220FA3351889C97E005DF10A /* TASTag.m */,
+				220FA3361889C97E005DF10A /* TASUnderlineParser.h */,
+				220FA3371889C97E005DF10A /* TASUnderlineParser.m */,
+				220FA3381889C97E005DF10A /* TASUnderlineTag.h */,
+				220FA3391889C97E005DF10A /* TASUnderlineTag.m */,
+			);
+			name = TASTaggedAttributedString;
+			path = ../TASTaggedAttributedString;
+			sourceTree = "<group>";
+		};
+		225B7411180EFEBD00D99A97 = {
+			isa = PBXGroup;
+			children = (
+				225B7452180EFED300D99A97 /* Categories */,
+				225B7423180EFEBD00D99A97 /* Tagged Attributed String Demo */,
+				225B741C180EFEBD00D99A97 /* Frameworks */,
+				225B741B180EFEBD00D99A97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		225B741B180EFEBD00D99A97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				225B741A180EFEBD00D99A97 /* Tagged Attributed String.app */,
+				225B743B180EFEBD00D99A97 /* Tagged Attributed StringTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		225B741C180EFEBD00D99A97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				225B741D180EFEBD00D99A97 /* Foundation.framework */,
+				225B741F180EFEBD00D99A97 /* CoreGraphics.framework */,
+				225B7421180EFEBD00D99A97 /* UIKit.framework */,
+				225B743C180EFEBD00D99A97 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		225B7423180EFEBD00D99A97 /* Tagged Attributed String Demo */ = {
+			isa = PBXGroup;
+			children = (
+				225B742C180EFEBD00D99A97 /* TASAppDelegate.h */,
+				225B742D180EFEBD00D99A97 /* TASAppDelegate.m */,
+				225B742F180EFEBD00D99A97 /* Main.storyboard */,
+				225B7432180EFEBD00D99A97 /* TASViewController.h */,
+				225B7433180EFEBD00D99A97 /* TASViewController.m */,
+				225B7435180EFEBD00D99A97 /* Images.xcassets */,
+				225B7424180EFEBD00D99A97 /* Supporting Files */,
+			);
+			name = "Tagged Attributed String Demo";
+			path = "Tagged Attributed String";
+			sourceTree = "<group>";
+		};
+		225B7424180EFEBD00D99A97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				225B7425180EFEBD00D99A97 /* Tagged Attributed String-Info.plist */,
+				225B7426180EFEBD00D99A97 /* InfoPlist.strings */,
+				225B7429180EFEBD00D99A97 /* main.m */,
+				225B742B180EFEBD00D99A97 /* Tagged Attributed String-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		225B7452180EFED300D99A97 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				220FA3071889C97E005DF10A /* TASTaggedAttributedString */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		225B7419180EFEBD00D99A97 /* Tagged Attributed String */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 225B744C180EFEBD00D99A97 /* Build configuration list for PBXNativeTarget "Tagged Attributed String" */;
+			buildPhases = (
+				225B7416180EFEBD00D99A97 /* Sources */,
+				225B7417180EFEBD00D99A97 /* Frameworks */,
+				225B7418180EFEBD00D99A97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tagged Attributed String";
+			productName = "Tagged Attributed String";
+			productReference = 225B741A180EFEBD00D99A97 /* Tagged Attributed String.app */;
+			productType = "com.apple.product-type.application";
+		};
+		225B743A180EFEBD00D99A97 /* Tagged Attributed StringTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 225B744F180EFEBD00D99A97 /* Build configuration list for PBXNativeTarget "Tagged Attributed StringTests" */;
+			buildPhases = (
+				225B7437180EFEBD00D99A97 /* Sources */,
+				225B7438180EFEBD00D99A97 /* Frameworks */,
+				225B7439180EFEBD00D99A97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				225B7441180EFEBD00D99A97 /* PBXTargetDependency */,
+			);
+			name = "Tagged Attributed StringTests";
+			productName = "Tagged Attributed StringTests";
+			productReference = 225B743B180EFEBD00D99A97 /* Tagged Attributed StringTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		225B7412180EFEBD00D99A97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TAS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Intrepid;
+				TargetAttributes = {
+					225B743A180EFEBD00D99A97 = {
+						TestTargetID = 225B7419180EFEBD00D99A97;
+					};
+				};
+			};
+			buildConfigurationList = 225B7415180EFEBD00D99A97 /* Build configuration list for PBXProject "Tagged Attributed String" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 225B7411180EFEBD00D99A97;
+			productRefGroup = 225B741B180EFEBD00D99A97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				225B7419180EFEBD00D99A97 /* Tagged Attributed String */,
+				225B743A180EFEBD00D99A97 /* Tagged Attributed StringTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		225B7418180EFEBD00D99A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225B7436180EFEBD00D99A97 /* Images.xcassets in Resources */,
+				225B7428180EFEBD00D99A97 /* InfoPlist.strings in Resources */,
+				225B7431180EFEBD00D99A97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225B7439180EFEBD00D99A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		225B7416180EFEBD00D99A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220FA33B1889C97E005DF10A /* TASAttribute.m in Sources */,
+				225B742A180EFEBD00D99A97 /* main.m in Sources */,
+				220FA3411889C97E005DF10A /* TASFontParser.m in Sources */,
+				220FA3431889C97E005DF10A /* TASForegroundColorParser.m in Sources */,
+				225B742E180EFEBD00D99A97 /* TASAppDelegate.m in Sources */,
+				220FA34B1889C97E005DF10A /* TASStrikethroughColorParser.m in Sources */,
+				220FA3521889C97E005DF10A /* TASUnderlineTag.m in Sources */,
+				220FA33A1889C97E005DF10A /* NSString+TaggedAttributedString.m in Sources */,
+				220FA3461889C97E005DF10A /* TASParagraphTag.m in Sources */,
+				220FA3511889C97E005DF10A /* TASUnderlineParser.m in Sources */,
+				220FA34A1889C97E005DF10A /* TASParserManagerConstants.m in Sources */,
+				220FA3501889C97E005DF10A /* TASTag.m in Sources */,
+				220FA3441889C97E005DF10A /* TASForegroundColorTag.m in Sources */,
+				220FA3471889C97E005DF10A /* TASParser.m in Sources */,
+				220FA33D1889C97E005DF10A /* TASBackgroundColorTag.m in Sources */,
+				220FA3401889C97E005DF10A /* TASFontManager.m in Sources */,
+				225B7434180EFEBD00D99A97 /* TASViewController.m in Sources */,
+				220FA33E1889C97E005DF10A /* TASColorManager.m in Sources */,
+				220FA33F1889C97E005DF10A /* TASColorTag.m in Sources */,
+				220FA3491889C97E005DF10A /* TASParserManager.m in Sources */,
+				220FA3421889C97E005DF10A /* TASFontTag.m in Sources */,
+				220FA33C1889C97E005DF10A /* TASBackgroundColorParser.m in Sources */,
+				220FA34D1889C97E005DF10A /* TASStrikethroughParser.m in Sources */,
+				220FA3451889C97E005DF10A /* TASParagraphParser.m in Sources */,
+				220FA3481889C97E005DF10A /* TASParseResult.m in Sources */,
+				220FA34C1889C97E005DF10A /* TASStrikethroughColorTag.m in Sources */,
+				220FA34F1889C97E005DF10A /* TASStringToAttributedStringParser.m in Sources */,
+				220FA34E1889C97E005DF10A /* TASStrikethroughTag.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225B7437180EFEBD00D99A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		225B7441180EFEBD00D99A97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 225B7419180EFEBD00D99A97 /* Tagged Attributed String */;
+			targetProxy = 225B7440180EFEBD00D99A97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		225B7426180EFEBD00D99A97 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				225B7427180EFEBD00D99A97 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		225B742F180EFEBD00D99A97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				225B7430180EFEBD00D99A97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		225B744A180EFEBD00D99A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		225B744B180EFEBD00D99A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		225B744D180EFEBD00D99A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tagged Attributed String/Tagged Attributed String-Prefix.pch";
+				INFOPLIST_FILE = "Tagged Attributed String/Tagged Attributed String-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		225B744E180EFEBD00D99A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tagged Attributed String/Tagged Attributed String-Prefix.pch";
+				INFOPLIST_FILE = "Tagged Attributed String/Tagged Attributed String-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		225B7450180EFEBD00D99A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tagged Attributed String.app/Tagged Attributed String";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tagged Attributed String/Tagged Attributed String-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tagged Attributed StringTests/Tagged Attributed StringTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		225B7451180EFEBD00D99A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tagged Attributed String.app/Tagged Attributed String";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tagged Attributed String/Tagged Attributed String-Prefix.pch";
+				INFOPLIST_FILE = "Tagged Attributed StringTests/Tagged Attributed StringTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		225B7415180EFEBD00D99A97 /* Build configuration list for PBXProject "Tagged Attributed String" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				225B744A180EFEBD00D99A97 /* Debug */,
+				225B744B180EFEBD00D99A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		225B744C180EFEBD00D99A97 /* Build configuration list for PBXNativeTarget "Tagged Attributed String" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				225B744D180EFEBD00D99A97 /* Debug */,
+				225B744E180EFEBD00D99A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		225B744F180EFEBD00D99A97 /* Build configuration list for PBXNativeTarget "Tagged Attributed StringTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				225B7450180EFEBD00D99A97 /* Debug */,
+				225B7451180EFEBD00D99A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 225B7412180EFEBD00D99A97 /* Project object */;
+}
